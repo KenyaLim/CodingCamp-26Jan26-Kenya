@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-circle">KS</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="profile.html" class="nav-link">Our Profile</a></li>
+                <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
+                <li><a href="#message-us" class="nav-link">Message Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home-section" id="home">
+        <div class="container">
+            <h1 class="welcome-message">Hi <span id="user-name">Guest</span>, Welcome To Website</h1>
+            <p class="subtitle">Kami adalah startup teknologi yang didedikasikan untuk Gen Z yang passionate tentang coding dan teknologi. Kami menyediakan platform pembelajaran, tools development, dan komunitas untuk membantu generasi muda mengembangkan skill programming mereka dan mewujudkan ide-ide kreatif menjadi aplikasi yang berdampak.</p>
+            <div class="banner-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1366&h=578&fit=crop&q=80" alt="Young developers coding together" class="banner-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section" id="message-us">
+        <div class="container">
+            <div class="message-wrapper">
+                <div class="form-container">
+                    <h2>Message Us</h2>
+                    <form id="message-form">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" placeholder="Nama" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" placeholder="Pesan" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                
+                <div class="display-container">
+                    <div class="display-box">
+                        <p class="current-time" id="current-time"></p>
+                        <div class="display-content" id="display-content">
+                            <p><strong>Nama:</strong> <span id="display-name">-</span></p>
+                            <p><strong>Email:</strong> <span id="display-email">-</span></p>
+                            <p><strong>Phone Number:</strong> <span id="display-phone">-</span></p>
+                            <p><strong>Pesan:</strong> <span id="display-message">-</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="headquarter-section">
+        <div class="container">
+            <hr class="section-divider">
+            <h2 class="headquarter-title">Our Headquarter</h2>
+            <div class="headquarter-cities">
+                <div class="city-item">
+                    <div class="city-circle">
+                        <img src="https://images.unsplash.com/photo-1590930754517-64d5fffa06ac?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="city-image">
+                    </div>
+                    <p class="city-name">Jakarta</p>
+                </div>
+                <div class="city-item">
+                    <div class="city-circle">
+                        <img src="https://images.unsplash.com/photo-1611638281871-1063d3e76e1f?q=80&w=833&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="city-image">
+                    </div>
+                    <p class="city-name">Bandung</p>
+                </div>
+                <div class="city-item">
+                    <div class="city-circle">
+                        <img src="https://images.unsplash.com/photo-1566176553949-872b2a73e04e?q=80&w=385&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="city-image">
+                    </div>
+                    <p class="city-name">Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Created By Kenya Syalwa</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
